@@ -1,23 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className='App'>
+      <header className='App-header'>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          This app is made with <strong>BAD</strong> practices and is quite{' '}
+          <strong>SLOW</strong> to load
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          There is a lot of linked CSS and jQuery in the header that doesn't
+          belong here.
+        </p>
+        <p>
+          <strong>Also</strong>, the image bellow is not at the right size and
+          format (4k jpg)
+        </p>
+        <img
+          style={{ width: '100%' }}
+          src='https://images.hdqwalls.com/wallpapers/the-big-universe-is-here-4k-q4.jpg'
+          alt='img'
+        />
       </header>
     </div>
   );
